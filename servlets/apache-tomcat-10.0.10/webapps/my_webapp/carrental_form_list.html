@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Plana de la comanda per al lloguer de cotxes -->
+<html>
+<title>Car Rental</title>
+<body>
+<h1>List of rental orders</h1>
+<br>
+<form action="/my_webapp/list" method="POST">
+<table summary="">
+<tr>
+<td>UserId:
+<td><input name=userid size=16 maxlength=16>
+</tr><tr>
+<td>Password:
+<td><input type="password" name="password" size="16" maxlength="16">
+</tr>
+</table>
+<br>
+<input name=llistar_lloguers type=submit value="Submit (POST)">
+<br>
+</form>
+<br>
+<a href="carrental_home.html">Home</a>
+</body>
+</html>

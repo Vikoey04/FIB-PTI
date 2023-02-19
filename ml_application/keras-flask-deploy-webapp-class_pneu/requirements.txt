@@ -1,0 +1,8 @@
+Flask 
+gevent 
+h5py 
+numpy 
+Pillow 
+tensorflow-cpu 
+Werkzeug
+tensorflow_datasets 

@@ -1,0 +1,7 @@
+torch 
+torchvision
+tensorflow
+fastai
+python-dotenv
+aiohttp[speedups]
+flask

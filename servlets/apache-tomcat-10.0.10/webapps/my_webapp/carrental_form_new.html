@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Plana de la comanda per al lloguer de cotxes -->
+<html>
+<title>Car Rental</title>
+<body>
+<h1>New rental</h1>
+&nbsp; <br>
+<form action="/my_webapp/new" method="GET">
+<table summary="">
+<tr>
+<td>CO2 rating:</td>
+<td><select name=co2_rating>
+<option selected VALUE=54>Extralow
+<option VALUE=71>Low
+<option VALUE=82>Medium
+<option VALUE=139>High
+</select>
+</td>
+<td>Engine:</td>
+<td><select name=sub_model_vehicle>
+<option selected VALUE=Hybrid>Hybrid
+<option VALUE=Electric>Electric
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Number of days:</td>
+<td><input name=dies_lloguer size=3 maxlength=3 value=1></td>
+<td>Number of units:</td>
+<td><input name=num_vehicles size=3 maxlength=3 value=1></td>
+</tr>
+<tr>
+<td>Discount(%):</td>
+<td><input name=descompte size=3 maxlength=3 value=0.0></td>
+</tr>
+
+</table>
+&nbsp; <br>
+<input name=llogar type=submit value="Submit (GET)">
+<br>
+</form>
+&nbsp; <br>
+<a href="carrental_home.html">Home</a>
+</body>
+</html>

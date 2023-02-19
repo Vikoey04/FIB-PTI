@@ -1,0 +1,22 @@
+   <web-app>
+        <servlet>
+          <servlet-name>new</servlet-name>
+          <servlet-class>mypackage.CarRentalNew</servlet-class>
+        </servlet>
+        <servlet-mapping>
+          <servlet-name>new</servlet-name>
+          <url-pattern>/new</url-pattern>
+        </servlet-mapping>
+        <servlet>
+          <servlet-name>list</servlet-name>
+          <servlet-class>mypackage.CarRentalList</servlet-class>
+        </servlet>
+        <servlet-mapping>
+          <servlet-name>list</servlet-name>
+          <url-pattern>/list</url-pattern>
+        </servlet-mapping>
+    </web-app>
+
+
+
+
