@@ -23,7 +23,7 @@ public class CarRentalList extends HttpServlet {
     out.println("<html><big>Hola Amigo "+ nombre + "</big><br>"+
                 cont + " Accesos desde su carga.</html>");
 
-    try (Reader reader = new FileReader("rentals.json")) {
+    try (Reader reader = new FileReader("webapps/my_webapp/rentals.json")) {
       JSONParser parser = new JSONParser();
       JSONObject obj = (JSONObject) parser.parse(reader);
       JSONArray rentals = (JSONArray) obj.get("rentals");
