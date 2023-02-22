@@ -40,7 +40,7 @@ public class CarRentalNew extends HttpServlet {
     if (!error) {
       out.println("<html><ul><li>Car model: "+model+"</li><li>Engine: "+engine+"</li><li>Days: "+days+"</li><li>Units: "+units+"</li><li>Discount: "+discount+"</li></ul></html>");
     
-      File file = new File("webapps/my_webapp/rentals.json");
+      File file = new File("my_webapp/rentals.json");
       JSONObject new_rental = new JSONObject();
       new_rental.put("sub_model_vehicle", engine);
       new_rental.put("num_vehicles", units);
@@ -62,7 +62,7 @@ public class CarRentalNew extends HttpServlet {
         e.printStackTrace();
       }
 
-      try (FileWriter filewr = new FileWriter("webapps/my_webapp/rentals.json")) {
+      try (FileWriter filewr = new FileWriter("my_webapp/rentals.json")) {
         JSONObject act = new JSONObject();
         act.put("rentals", rentals);
         filewr.write(act.toJSONString());

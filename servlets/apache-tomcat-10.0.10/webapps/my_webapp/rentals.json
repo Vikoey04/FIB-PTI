@@ -1,1 +1,1 @@
-{"rentals":[]}
+{"rentals":[{"sub_model_vehicle":"Hybrid","num_vehicles":"1","model_vehicle":"Extralow","dies_lloguer":"1","descompte":"0.0"},{"sub_model_vehicle":"Hybrid","num_vehicles":"1","model_vehicle":"Low","dies_lloguer":"1","descompte":"50"},{"sub_model_vehicle":"Electric","num_vehicles":"5","model_vehicle":"Low","dies_lloguer":"1","descompte":"85"}]}
