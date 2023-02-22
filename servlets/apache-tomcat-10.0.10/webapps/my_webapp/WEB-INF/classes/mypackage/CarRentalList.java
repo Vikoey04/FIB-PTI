@@ -25,7 +25,8 @@ public class CarRentalList extends HttpServlet {
     if (name.equals("admin") && passwd.equals("admin")) {
       out.println("<html><h1>Rentals List:</h1></html>");
 
-      try (Reader reader = new FileReader("my_webapp/rentals.json")) {
+      // try (Reader reader = new FileReader("webapps/my_webapp/rentals.json")) {
+      try (Reader reader = new FileReader("my_webapp/rentals.json")) { //Docker
         JSONParser parser = new JSONParser();
         JSONObject obj = (JSONObject) parser.parse(reader);
         JSONArray rentals = (JSONArray) obj.get("rentals");
