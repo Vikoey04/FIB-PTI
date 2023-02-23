@@ -1,0 +1,5 @@
+curl -i -H "Content-Type: application/json" -d '{"brand":"Audi", "model":"rs6", "days":"3"}' http://localhost:8080/newrental
+
+curl -i -H "Content-Type: application/json" -d '{"brand":"Bmw", "model":"m4", "days":"10"}' http://localhost:8080/newrental
+
+curl -i http://localhost:8080/listrentals
